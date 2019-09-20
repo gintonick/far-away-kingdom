@@ -1,14 +1,14 @@
 package org.btarikool.javacourse;
 
-public class Knight {
+public class Peasant {
     String name;
 
-    public Knight(String name) {
+    public Peasant(String name) {
         this.name = name;
     }
 
     public String getTitleAndName() {
-        return "Knight " + name;
+        return name;
     }
 
     public void doAction(String actionContent) {
@@ -16,8 +16,5 @@ public class Knight {
         action.doAction(this.getTitleAndName(), actionContent);
     }
 
-    public void sayHello(String name) {
-        System.out.format("Hello! I am the Knight %s\n", name);
-    }
 
 }
